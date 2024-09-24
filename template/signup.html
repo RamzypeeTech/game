@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="{% static './signin.css' %}" />
+  </head>
+  <body>
+    <div class="gen-div">
+      <div class="signin-div">
+        <p class="signin">Sign In</p>
+        <br />
+        <p class="username">Username</p>
+        <input type="text" placeholder="Username" id="username-signin-input" />
+        <br />
+        <p class="email">Email</p>
+        <input type="text" placeholder="Email" id="email-signin-input" />
+        <br />
+        <p class="password">Password</p>
+        <input type="password" placeholder="Password" id="password-signin-input" />
+        <p id="error-message" class="error"></p>
+        <p class="not-yet">
+          Not yet registered? <a href="./login.html" class="log-in-link"><span>LOGIN</span></a>
+        </p>
+        <br />
+        <br />
+        <br />
+        <a href=""><button id="submitButton">SIGN IN</button></a>
+      </div>
+      <div class="animation-div">
+        <p class="letter" id="letter1">G</p>
+        <p class="letter" id="letter2">U</p>
+        <p class="letter" id="letter3">E</p>
+        <p class="letter" id="letter4">S</p>
+        <p class="letter" id="letter5">S</p>
+        <p class="letter" id="letter6">I</p>
+        <p class="letter" id="letter7">N</p>
+        <p class="letter" id="letter8">G</p>
+        <p class="letter-ano" id="letter9">A</p>
+        <p class="letter-ano" id="letter10">M</p>
+        <p class="letter-ano" id="letter11">E</p>
+      </div>
+    </div>
+
+    <script src="./signin.js"></script>
+  </body>
+</html>

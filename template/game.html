@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to Rock, paper, Scissors Guessing Game!</h1>
+      <p>Click the start Gussing to play</p>
+      <a href="{% url 'guessing_number' %}">Start Guessing</a>
+    </div>
+  </body>
+</html>
